@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class SumTwoNum1 {
     /**
      * I was so stupid
      * @param nums
@@ -48,7 +48,7 @@ class Solution {
     public static void main(String[] args) {
         int[] nums = {-3,4,3,90};
         int target = 0;
-        int[] res = Solution.twoSum(nums, target);
+        int[] res = SumTwoNum1.twoSum(nums, target);
         System.out.println("first: " + res[0] + "second: " + res[1]);
         int[] intArr = {1,2,3};
         System.out.println(Arrays.asList(intArr).contains(new Integer(2)));
