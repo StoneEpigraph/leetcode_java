@@ -34,7 +34,7 @@ public class SummaryRanges228 {
         int i = 0;
         int n = arr.length;
         while (i < n) {
-            int low = 0;
+            int low = i;
             i++;
             while(i < n && arr[i] == arr[i - 1] + 1) {
                 i++;
