@@ -1,7 +1,7 @@
 public class CountBits338 {
-    public int[] countBits(int n) {
+    public int[] countBits1(int n) {
         int[] res = new int[n + 1];
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             res[i] = countBit(i);
         }
         return res;
@@ -12,6 +12,14 @@ public class CountBits338 {
         while (num > 0) {
             num = num & (num - 1);
             res++;
+        }
+        return res;
+    }
+
+    public int[] countBits(int n) {
+        int[] res = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            res[i] = res[i & (i - 1)] + 1;
         }
         return res;
     }
